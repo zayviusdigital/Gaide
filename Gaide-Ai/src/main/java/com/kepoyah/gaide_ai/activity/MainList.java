@@ -45,7 +45,7 @@ public class MainList extends AppCompatActivity{
         dialogWait = new DialogWait(this);
         String[] geta_ll = OK("VmpGU1MxSXlWbGhTYkZKcVVqSm9jVlZxUWxkbFJtUnlXa1prYW1FemFGVlVNV040V1ZaWmVGZHVTbHBOTW5NeFdrUktTbVZzVW5GUmJYQnNWa2Q0ZVZZeWVHdFpWMFpJVld4b2JGSkZTbEpVVjNCSFlqRndWbEpVYkZGVlZEQTU=").split("-");
         recyclerView = findViewById(R.id.recyclerview_list);
-        recyclerView.setHasFixedSize(true);
+        //recyclerView.setHasFixedSize(true);
         int spanCount = 1;
         GridLayoutManager manager = new GridLayoutManager(this,spanCount);
         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
