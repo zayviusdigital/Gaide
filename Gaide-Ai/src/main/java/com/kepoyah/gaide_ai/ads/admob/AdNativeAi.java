@@ -37,7 +37,7 @@ public class AdNativeAi {
             }
             nativeads = nativeAd;
             @SuppressLint("InflateParams") NativeAdView adView =
-                    (NativeAdView) activity.getLayoutInflater().inflate(R.layout.ad_unified, null);
+                    (NativeAdView) activity.getLayoutInflater().inflate(R.layout.ad_unified_ai, null);
             populateNativeAdView(nativeAd, adView);
             frameLayout.removeAllViews();
             frameLayout.addView(adView);

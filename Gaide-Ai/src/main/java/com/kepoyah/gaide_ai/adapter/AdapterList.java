@@ -47,10 +47,10 @@ public class AdapterList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v;
         if (viewType == NATIVE_AD_VIEW_TYPE) {
-            v = mLayoutInflater.inflate(R.layout.list_native, parent, false);
+            v = mLayoutInflater.inflate(R.layout.list_native_ai, parent, false);
             return new NativeAdViewHolder(v);
         }
-        v = mLayoutInflater.inflate(R.layout.list_item, parent, false);
+        v = mLayoutInflater.inflate(R.layout.list_item_ai, parent, false);
         return new ImageViewHolder(v);
     }
 

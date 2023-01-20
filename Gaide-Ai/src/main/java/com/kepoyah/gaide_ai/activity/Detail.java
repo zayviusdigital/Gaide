@@ -35,7 +35,7 @@ public class Detail extends AppCompatActivity implements Html.ImageGetter{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view);
+        setContentView(R.layout.activity_view_ai);
 
         TextView titleTv = findViewById(R.id.titleTv);
         contentDescription = findViewById(R.id.contentDesc);

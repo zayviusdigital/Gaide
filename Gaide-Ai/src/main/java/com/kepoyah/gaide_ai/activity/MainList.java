@@ -41,10 +41,20 @@ public class MainList extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.recyclerview);
+        setContentView(R.layout.activity_main_ai);
         dialogWait = new DialogWait(this);
         String[] geta_ll = OK("VmpGU1MxSXlWbGhTYkZKcVVqSm9jVlZxUWxkbFJtUnlXa1prYW1FemFGVlVNV040V1ZaWmVGZHVTbHBOTW5NeFdrUktTbVZzVW5GUmJYQnNWa2Q0ZVZZeWVHdFpWMFpJVld4b2JGSkZTbEpVVjNCSFlqRndWbEpVYkZGVlZEQTU=").split("-");
+        recyclerView =  (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView.setHasFixedSize(true);
+        int spanCount = 1;
+        GridLayoutManager manager = new GridLayoutManager(this,spanCount);
+        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                return ((position+1)%5 == 0 && position!=0 ? spanCount : 1);
+            }
+        });
+        recyclerView.setLayoutManager(manager);
         get_list(geta_ll[1]);
     }
 
