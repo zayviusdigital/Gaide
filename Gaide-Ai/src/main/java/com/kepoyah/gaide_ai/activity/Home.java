@@ -10,6 +10,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.kepoyah.gaide_ai.R;
@@ -28,8 +29,10 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_ai);
-        MaterialToolbar materialToolbar = findViewById(R.id.toolbar);
-        materialToolbar.setTitle(SettingsAi.app_name);
+        Button get = findViewById(R.id.bt_open);
+        Button pp = findViewById(R.id.pp);
+        get.setBackgroundColor(SettingsAi.color_all);
+        pp.setBackgroundColor(SettingsAi.color_all);
         frameLayout =  findViewById(R.id.native_ad);
         cardView = findViewById(R.id.native_ad_car);
         dialogWait = new DialogWait(this);
