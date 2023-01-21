@@ -20,7 +20,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.appopen.AppOpenAd;
-import com.zayvius.apepegaide.config.Settings;
+import com.kepoyah.gaide_ai.config.SettingsAi;
 
 public class OpenAppAi implements Application.ActivityLifecycleCallbacks, LifecycleObserver {
     private static final String LOG_TAG = "OpenAppAi";
@@ -73,7 +73,7 @@ public class OpenAppAi implements Application.ActivityLifecycleCallbacks, Lifecy
 
         };
         AdRequest request = getAdRequest();
-        AppOpenAd.load(myApplication, Settings.ad_open,
+        AppOpenAd.load(myApplication, SettingsAi.ad_open_ai,
                 request, AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                 loadCallback);
 
