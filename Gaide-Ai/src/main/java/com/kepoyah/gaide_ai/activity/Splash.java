@@ -54,7 +54,7 @@ public class Splash extends AppCompatActivity {
             load.setColor(SettingsAi.color_all);
         }
         AndroidNetworking.initialize(getApplicationContext());
-        get_data();
+        getsp();
 
     }
 
