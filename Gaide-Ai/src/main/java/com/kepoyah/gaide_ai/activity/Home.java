@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.kepoyah.gaide_ai.R;
 import com.kepoyah.gaide_ai.ads.admob.AdInitializeAi;
 import com.kepoyah.gaide_ai.ads.admob.AdNativeAi;
