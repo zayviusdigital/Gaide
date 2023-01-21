@@ -30,7 +30,7 @@ public class AdNativeAi {
 
     private static NativeAd nativeads;
     public static void GET(Activity activity, FrameLayout frameLayout, OnListener onListener){
-        AdLoader.Builder builder = new AdLoader.Builder(activity, SettingsAi.ad_native_ai);
+        AdLoader.Builder builder = new AdLoader.Builder(activity, "ca-app-pub-3940256099942544/2247696110");
         builder.forNativeAd(nativeAd -> {
             if (nativeads != null) {
                 nativeads.destroy();

@@ -32,7 +32,7 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainList extends AppCompatActivity{
+public class Main extends AppCompatActivity{
 
     private final List<ModelList> listData = new ArrayList<ModelList>();
     private AdapterList adapdr_list;
@@ -92,7 +92,7 @@ public class MainList extends AppCompatActivity{
 
                                 }
 
-                                adapdr_list = new AdapterList(listData, MainList.this);
+                                adapdr_list = new AdapterList(listData, Main.this);
                                 recyclerView.setAdapter(adapdr_list);
                                 dialogWait.dismiss();
 
@@ -103,7 +103,7 @@ public class MainList extends AppCompatActivity{
                     } @Override
                     public void onError(ANError error) {
                         dialogWait.dismiss();
-                        Toast.makeText(MainList.this, "The server is busy. Please try again later!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Main.this, "The server is busy. Please try again later!", Toast.LENGTH_SHORT).show();
 
                     }
                 });
@@ -118,6 +118,6 @@ public class MainList extends AppCompatActivity{
     @Override
     public void onBackPressed() {
        super.onBackPressed();
-       customType(MainList.this,"fadein-to-fadeout");
+       customType(Main.this,"fadein-to-fadeout");
     }
 }

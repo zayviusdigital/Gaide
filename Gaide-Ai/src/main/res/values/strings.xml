@@ -1,3 +1,5 @@
 <resources>
     <string name="todo">TODO</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="get_started">Get Started</string>
 </resources>
